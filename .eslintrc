@@ -1,0 +1,17 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": ["airbnb"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": 0,
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-promise-executor-return": "off",
+  }
+}

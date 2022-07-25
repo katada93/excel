@@ -1,19 +1,25 @@
 {
   "name": "exel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Excel clone with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode=development --node-env=development",
-    "build": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "start": "webpack serve"
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-webpack-plugin": "^3.2.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
