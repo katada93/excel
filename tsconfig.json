@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true, 
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "target": "ES3",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*":["./*"]
+    },
+  }
+}

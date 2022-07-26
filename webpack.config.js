@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   target: isProduction ? 'browserslist' : 'web',
-  entry: './src/index.js',
+  entry: './src/index.ts',
   mode: isProduction ? 'production' : 'development',
   devtool: 'source-map',
   output: {
@@ -18,7 +18,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src/'),
     },
-    extensions: ['.js'],
+    extensions: ['.js', '.ts'],
   },
   module: {
     rules: [
@@ -39,6 +39,11 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
     ],
   },
