@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -15,10 +17,7 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src/'),
-    },
-    extensions: ['.js', '.ts'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
   module: {
     rules: [

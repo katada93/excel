@@ -1,6 +1,6 @@
-import { sleep } from '@/utils';
+import { Excel } from './components/Excel';
 import './scss/index.scss';
 
-sleep(123).then((result) => {
-  console.log(result);
-});
+const excel = new Excel('#app');
+
+console.log(excel);

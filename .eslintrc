@@ -1,13 +1,16 @@
 {
-  "parser": "@babel/eslint-parser",
-  "extends": ["airbnb"],
-  "env": {
-    "es6": true,
-    "browser": true,
-    "node": true
-  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
-    "no-unused-vars": 0,
+    "no-unused-vars": "off",
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
