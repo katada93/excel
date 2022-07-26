@@ -7,16 +7,12 @@
     "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint . --ext .ts",
-    "fix": "eslint . --ext .ts --fix"
+    "fix": "eslint . --ext .ts --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "husky": {
-    "hooks": {
-      "pre-push": "CI=true npm run fix"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/eslint-parser": "^7.18.9",
